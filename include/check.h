@@ -55,7 +55,7 @@ static void indent(int level) {
   }
 }
 
-static void check_print_stats() {
+static inline void check_print_stats() {
   printf("\n%s  %s %d assertions, %d passed, %d skipped, %d failed.%s\n",
          check_failed ? red : check_skipped ? blue : green,
          check_failed ? cross : tick,
